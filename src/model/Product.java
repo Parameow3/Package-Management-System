@@ -1,11 +1,20 @@
 package model;
 
-public class Package {
+public class Product {
     private int packageId;
     private String from;
     private String to;
     private int price;
 
+    public Product(){
+
+    }
+    public Product(int id, String from, String to, int price) {
+        this.packageId = id;
+        this.from = from;
+        this.to = to;
+        this.price = price;
+    }
     //setter and getter
     public int getPackageId() {
         return packageId;

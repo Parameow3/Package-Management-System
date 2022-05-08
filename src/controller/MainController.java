@@ -1,31 +1,33 @@
 package controller;
 
+import view.AddPackageView;
+import view.DisplayView;
+
 import java.util.Scanner;
 
 public class MainController {
-    private int choice;
+    private final AddPackageView addPackageView;
+    private DisplayView displayView;
 
-    // setter and getter
-    public int getChoice() {
-        return choice;
-    }
-    public void setChoice(int choice) {
-        this.choice = choice;
+    public MainController() {
+        addPackageView = new AddPackageView();
+        displayView    = new DisplayView()   ;
     }
 
     // methods
     public int inputChoice(){
         System.out.print("Please Input your choice: ");
         Scanner input = new Scanner(System.in);
-        choice = input.nextInt();
-        return choice;
+        return input.nextInt();
     }
     public void switchClass(int choice) {
         if (choice == 1) {
             System.out.println("< Add New Package >");
+            addPackageView.generateInterface();
         }
         else if (choice == 2) {
-            System.out.println("< Display Package >");
+            System.out.println("________________< Display Package >________________");
+            displayView.displayPackageInterface();
         }
         else if (choice == 3) {
             System.out.println("< Update Package >");
