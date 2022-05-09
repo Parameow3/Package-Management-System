@@ -5,11 +5,13 @@ import controller.MainController;
 public class MainView {
     // field
     private MainController mainController;
+
     //non-default constructor
     public MainView(MainController mainController){
         this.mainController = mainController;
     }
-    //method
+
+    // generateMenu method
     public void generateMenu(){
         while (true) {
             System.out.println("< Package Management System >");

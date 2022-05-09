@@ -5,9 +5,13 @@ import java.util.Scanner;
 import model.Product;
 
 public class AddPackageController {
+    // ArrayList of object Product
     public ArrayList <Product> packages = new ArrayList<Product>();
+
+    // Scanner for user input
     private final Scanner input = new Scanner(System.in);
 
+    // generateInput method
     public void generateInput(){
         System.out.print("ID: ");
         int id = input.nextInt();

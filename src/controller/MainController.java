@@ -6,20 +6,24 @@ import view.DisplayView;
 import java.util.Scanner;
 
 public class MainController {
+    // class field
     private AddPackageView addPackageView;
     private DisplayView displayView;
 
+    // non-default constructor
     public MainController(AddPackageView addPackageView, DisplayView displayView) {
         this.addPackageView = addPackageView;
         this.displayView = displayView;
     }
 
-    // methods
+    // methods for user's choice
     public int inputChoice(){
         System.out.print("Please Input your choice: ");
         Scanner input = new Scanner(System.in);
         return input.nextInt();
     }
+
+    // method for switch the choice or class
     public void switchClass(int choice) {
         if (choice == 1) {
             System.out.println("< Add New Package >");
