@@ -1,12 +1,13 @@
 package view;
 
+import controller.AddPackageController;
 import controller.DisplayController;
 
 public class DisplayView {
-    private final DisplayController displayController;
+    private DisplayController displayController;
 
-    public DisplayView() {
-        displayController = new DisplayController();
+    public DisplayView(DisplayController displayController) {
+        this.displayController = displayController;
     }
     public void displayPackageInterface(){
         System.out.println("| ID\t\t\tFrom\t\t\tTo\t\t\tPrice |");

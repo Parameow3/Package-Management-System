@@ -5,10 +5,6 @@ public class Product {
     private String from;
     private String to;
     private int price;
-
-    public Product(){
-
-    }
     public Product(int id, String from, String to, int price) {
         this.packageId = id;
         this.from = from;

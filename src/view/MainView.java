@@ -3,12 +3,13 @@ package view;
 import controller.MainController;
 
 public class MainView {
-    private final MainController mainController;
-
-    public MainView(){
-        mainController = new MainController();
+    // field
+    private MainController mainController;
+    //non-default constructor
+    public MainView(MainController mainController){
+        this.mainController = mainController;
     }
-    //display method
+    //method
     public void generateMenu(){
         while (true) {
             System.out.println("< Package Management System >");

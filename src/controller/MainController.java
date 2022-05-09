@@ -6,12 +6,12 @@ import view.DisplayView;
 import java.util.Scanner;
 
 public class MainController {
-    private final AddPackageView addPackageView;
+    private AddPackageView addPackageView;
     private DisplayView displayView;
 
-    public MainController() {
-        addPackageView = new AddPackageView();
-        displayView    = new DisplayView()   ;
+    public MainController(AddPackageView addPackageView, DisplayView displayView) {
+        this.addPackageView = addPackageView;
+        this.displayView = displayView;
     }
 
     // methods

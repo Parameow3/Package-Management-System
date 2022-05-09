@@ -3,11 +3,11 @@ package view;
 import controller.AddPackageController;
 
 public class AddPackageView {
-    private final AddPackageController addPackageController;
+    private AddPackageController addPackageController;
 
     //default constructor
-    public AddPackageView() {
-        addPackageController = new AddPackageController();
+    public AddPackageView(AddPackageController addPackageController) {
+        this.addPackageController = addPackageController;
     }
     //method
     public void generateInterface() {
