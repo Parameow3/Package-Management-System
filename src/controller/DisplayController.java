@@ -13,7 +13,7 @@ public class DisplayController {
 
     // generate list method
     public void generateList() {
-        for (Product products : addPackageController.packages) {
+        for (Product products : addPackageController.packageList) {
             System.out.println("| " + products.getPackageId() + "\t\t\t"
                                     + products.getFrom()      + "\t\t\t\t"
                                     + products.getTo()        + "\t\t\t"

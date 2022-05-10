@@ -6,10 +6,10 @@ import model.Product;
 
 public class AddPackageController {
     // ArrayList of object Product
-    public ArrayList <Product> packages = new ArrayList<Product>();
+    public ArrayList <Product> packageList = new ArrayList<Product>();
 
     // Scanner for user input
-    private final Scanner input = new Scanner(System.in);
+    private Scanner input = new Scanner(System.in);
 
     // generateInput method
     public void generateInput(){
@@ -22,6 +22,6 @@ public class AddPackageController {
         String to = input.nextLine();
         System.out.print("Price: ");
         int price = input.nextInt();
-        packages.add(new Product(id, from, to, price));
+        packageList.add(new Product(id, from, to, price));
     }
 }
